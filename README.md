@@ -1,4 +1,4 @@
-# argo-quicktunnel API 文档
+# API 文档
 
 GitHub Copilot: 以下是根据给定的 `api.js` 代码生成的 API 文档，用作项目的 `README.md` 文件。
 
@@ -10,6 +10,32 @@ GitHub Copilot: 以下是根据给定的 `api.js` 代码生成的 API 文档，�
 - `/ready`：返回 cloudflared 是否与边缘连接并能够提供流量以及连接器 ID。
 - `/quicktunnel`：快速隧道的 API 路径。
 - `/config`：如果隧道由 Cloudflare 远程管理，则返回活动配置的 JSON。
+
+以下是关于如何设置环境变量的文档介绍，以便正确运行 `api.js`。
+
+## 环境变量
+
+`UUID` 设置一个例子为 `91b985e2-7d7d-40e9-9a05-60423e51a632` 的 UUID。
+
+- `UUID`：用于 vlees 的 UUID。
+
+`api.js` 使用以下环境变量：
+
+- `PORT`：指定应用程序监听的端口号。如果未设置，则默认为 `3000`。
+
+要设置环境变量，请在终端中使用以下语法：
+
+```
+export VARIABLE_NAME=value
+```
+
+例如，要将端口号设置为 `8080`，请使用以下命令：
+
+```
+export PORT=8080
+```
+
+请注意，这将仅在当前终端会话中设置环境变量。如果您希望永久设置环境变量，请将其添加到您的 shell 配置文件中，例如 `~/.bashrc` 或 `~/.zshrc`。
 
 ## GET /
 
