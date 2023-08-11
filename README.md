@@ -1,4 +1,6 @@
-# API 文档
+# argo-quicktunnel
+
+**特点：完全使用临时 quicktunnel 并且使用订阅来自动获取最新的节点，全部是使用 trycloudflare.com 域名**
 
 GitHub Copilot: 以下是根据给定的 `api.js` 代码生成的 API 文档，用作项目的 `README.md` 文件。
 
