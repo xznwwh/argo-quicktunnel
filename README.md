@@ -1,6 +1,15 @@
 # argo-quicktunnel API 文档
 
-GitHub Copilot: 以下是根据 `api.js` 代码生成的 API 文档，用作项目的 `README.md` 文件。
+GitHub Copilot: 以下是根据给定的 `api.js` 代码生成的 API 文档，用作项目的 `README.md` 文件。
+
+这些是 `http://localhost:3001/`(Arogo tunnel) 上可用的 API 路径：
+
+- `/debug`：标准的 pprof 端点，用于性能分析。
+- `/metrics`：从 cloudflared 进程报告广泛的 Prometheus 指标。
+- `/healthcheck`：如果 cloudflared 正在运行，则返回标准的 200 OK。
+- `/ready`：返回 cloudflared 是否与边缘连接并能够提供流量以及连接器 ID。
+- `/quicktunnel`：快速隧道的 API 路径。
+- `/config`：如果隧道由 Cloudflare 远程管理，则返回活动配置的 JSON。
 
 ## GET /
 
