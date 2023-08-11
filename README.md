@@ -2,6 +2,8 @@
 
 **特点：完全使用临时 quicktunnel 并且使用订阅来自动获取最新的节点，全部是使用 trycloudflare.com 域名**
 
+示例部署演示：https://rft8lt-3000.csb.app/host/sub
+
 GitHub Copilot: 以下是根据给定的 `api.js` 代码生成的 API 文档，用作项目的 `README.md` 文件。
 
 这些是 `http://localhost:3001/`(Arogo tunnel) 上可用的 API 路径：
